@@ -1,0 +1,262 @@
+@charset "UTF-8";
+/*!
+ */
+body {font-family: Georgia, serif;}
+
+div.a {
+  text-align: center;
+}
+button.btn-extra,
+a.button.btn-extra,
+input[type="button"].button.btn-extra {
+    font-size: 1em;
+    height: 70px;
+    padding: 0;
+    text-transform: uppercase;
+    background: transparent;
+    color: #fff;
+    line-height: 1.5em;
+    border: 1px solid #01b7f2;
+    border-left: none;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 0;
+    display: inline-table;
+    table-layout: fixed;
+    margin-right: 10px;
+    margin-bottom: 10px
+}
+
+button.btn-extra>i,
+a.button.btn-extra>i,
+input[type="button"].button.btn-extra>i {
+    width: 55px;
+    vertical-align: middle;
+    background: #01b7f2;
+    color: #2d3e52;
+    font-size: 36px;
+    display: table-cell;
+    height: 70px;
+    text-align: right;
+    padding-right: 8px
+}
+
+button.btn-extra>i:after,
+a.button.btn-extra>i:after,
+input[type="button"].button.btn-extra>i:after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 55px;
+    border-bottom: 70px solid #01b7f2;
+    border-right: 16px solid transparent;
+    top: 0;
+    bottom: 0
+}
+
+button.btn-extra>span,
+a.button.btn-extra>span,
+input[type="button"].button.btn-extra>span {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 20px 0 35px;
+    text-align: left
+}
+
+button.btn-extra>span em,
+a.button.btn-extra>span em,
+input[type="button"].button.btn-extra>span em {
+    color: #01b7f2;
+    font-size: 1.6667em;
+    font-weight: bold;
+    font-style: normal
+}
+
+button.btn-extra:hover,
+a.button.btn-extra:hover,
+input[type="button"].button.btn-extra:hover {
+    color: inherit;
+    background: #fff;
+    border: none;
+    border-right: 1px solid transparent !important
+}
+
+button.btn-extra:hover>i,
+a.button.btn-extra:hover>i,
+input[type="button"].button.btn-extra:hover>i {
+    color: #fff
+}
+
+button.btn-extra.blue,
+a.button.btn-extra.blue,
+input[type="button"].button.btn-extra.blue {
+    border-color: #01b7f2
+}
+
+button.btn-extra.blue>i,
+a.button.btn-extra.blue>i,
+input[type="button"].button.btn-extra.blue>i {
+    background: #01b7f2
+}
+
+button.btn-extra.blue>i:after,
+a.button.btn-extra.blue>i:after,
+input[type="button"].button.btn-extra.blue>i:after {
+    border-bottom-color: #01b7f2
+}
+
+button.btn-extra.blue>span em,
+a.button.btn-extra.blue>span em,
+input[type="button"].button.btn-extra.blue>span em {
+    color: #01b7f2
+}
+
+button.btn-extra.yellow,
+a.button.btn-extra.yellow,
+input[type="button"].button.btn-extra.yellow {
+    border-color: #fdb714
+}
+
+button.btn-extra.yellow>i,
+a.button.btn-extra.yellow>i,
+input[type="button"].button.btn-extra.yellow>i {
+    background: #fdb714
+}
+
+button.btn-extra.yellow>i:after,
+a.button.btn-extra.yellow>i:after,
+input[type="button"].button.btn-extra.yellow>i:after {
+    border-bottom-color: #fdb714
+}
+
+button.btn-extra.yellow>span em,
+a.button.btn-extra.yellow>span em,
+input[type="button"].button.btn-extra.yellow>span em {
+    color: #fdb714
+}
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 400px;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  background-color: #ff8a65;
+  border: 2px solid #000;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #e91e63;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 49%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(255, 255, 255, 0.4); /* Black w/ opacity */
+  padding-top: 100px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #ffee58;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 2px solid #ff0909;
+  width: 20%; /* Could be more or less, depending on screen size */
+  height: 70%;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
